@@ -1,0 +1,306 @@
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+.boxes {
+  text-align: left;
+  display: inline-block;
+}
+  .dark-mode{
+    background-color: black;
+    color: black;
+  }
+
+  .dark-mode h2{
+    color: black;
+  }
+
+  h1{
+    color: linear-gradient(-45deg, red 0%, green 25%, blue 51%, yellow 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+            animation: AnimateBG 20s ease infinite;
+  }
+
+  .dark-mode h1{
+    color: black;
+  }
+
+  .dark-mode span{
+    color: black;
+  }
+
+  p{
+    color: white;
+  }
+
+  .dark-mode p {
+    color: black;
+  }
+
+  header {
+    background-color: #009c41;
+    color: white;
+    text-align: left;
+    padding: 1em;
+
+  }
+
+  .dark-mode header {
+    background-color: #ee4abd;
+    color: black;
+    text-align: left;
+    padding: 1em;
+  }
+
+  .dark-mode a{
+    color: black;
+    text-decoration: none; 
+   }
+
+
+  .inline-div {
+    display: inline;
+  }
+
+  section {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color:#009c41;
+    color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+
+  }
+
+  .clearContainer {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: transparent;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 1);
+  }
+
+  .mini {
+    max-width: 350px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color:#009c41;
+    color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+
+  }
+
+  .dark-mode section {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #ee4abd;
+    color: black;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  }
+
+  .dark-mode .clearContainer {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: transparent;
+    color: black;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 1);
+  }
+
+  .dark-mode .mini {
+    max-width: 350px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #ee4abd;
+    color: black;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  }
+
+  footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #009c41;
+    color: black;
+  }
+
+  .dark-mode footer {
+    text-align: center;
+    padding: 1em;
+    background-color:#ee4abd;
+    color: black;
+  }
+
+  .titlemov{
+    font-size: 3rem;
+    margin-bottom: 0px;
+    animation: WordStretch 3s 1;
+    color: white;
+    align-self: left;
+  }
+
+  .dark-mode .titlemov{
+    font-size: 3rem;
+    margin-bottom: 0px;
+    animation: WordStretch 3s 1;
+    color: black;
+    position: relative;
+  }
+
+
+  .subt{
+    animation: WordPopOut 3s 1;
+  }
+
+
+  .skills {
+    text-align: center;
+    color: white;
+
+  }
+
+  .sectionTitle {
+    text-align: center;
+    color: white;
+
+  }
+
+  .dark-mode .skills {
+    text-align: center;
+    color: black;
+
+  }
+
+  .semi-important {
+    text-decoration: underline;
+    background-color:#00c451;
+    color: #fff;
+    padding: 1em;
+  }
+
+  .dark-mode .semi-important {
+    text-decoration: underline;
+    background-color:#ffd2f1;
+    color: black;
+    padding: 1em;
+  }
+
+  .interact {
+    background-color: black;
+    text-decoration: none;
+    color: #f4f4f4;
+  }
+
+  .message-box {
+    width: 500px;
+    height: 300px;
+  }
+
+  .fade-in-title {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    opacity: 0; /* Start with 0 opacity */
+    animation: fadeIn 1s ease-in-out forwards; /* Use a 2-second animation with ease-in-out timing function */
+  }
+
+  .fade-in-text {
+    opacity: 0; /* Start with 0 opacity */
+    animation: fadeIn 2s ease-in-out forwards; /* Use a 2-second animation with ease-in-out timing function */
+  }
+
+
+  a:hover 
+  {
+    animation: LinkPopOut 1s ease forwards;
+    color: gold;
+  }
+
+  .bg {
+    width: 100%;
+    height: 100vh;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, white 0%, white 25%, black 51%, white 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+            animation: AnimateBG 20s ease infinite;
+  }
+  
+  @-webkit-keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes WordStretch {
+    0% {
+      color: white;
+    }
+    30% {
+      word-spacing: 20px;
+    }
+    85% {
+      word-spacing: 10px;
+  
+    }
+  }
+
+  @keyframes WordPopOut {
+    0% {
+      color: white;
+    }
+    30% {
+      font-size: 220%;
+    }
+    85% {
+      font-size: 120%;
+  
+    }
+  }
+
+  @keyframes SectionPopOut {
+    0% {
+      color: white;
+    }
+    100% {
+      font-size: 120%;
+  }
+}
+
+@keyframes LinkPopOut {
+  0% {
+    color: white;
+  }
+  100% {
+    font-size: 110%;
+}
+}
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Start from 0 opacity */
+    }
+    to {
+      opacity: 1; /* Fade to 1 opacity */
+    }
+  }
